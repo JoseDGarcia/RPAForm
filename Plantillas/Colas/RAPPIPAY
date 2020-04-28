@@ -1,0 +1,8 @@
+{"field": "Queue", "operator": "Is Equal To", "value": "Rappi Pay - cobros no reconocidos"},
+{"field": "Queue", "operator": "Is Equal To", "value": "RappiPay_RappiPay_Non_Live_tickets_Tickets_Priority_1"},
+{"field": "Queue", "operator": "Is Equal To", "value": "RappiPay_RappiPay_Non_Live_tickets_Tickets_Priority_2"},
+{"field": "Queue", "operator": "Is Equal To", "value": "RappiPay_RappiPay_Non_Live_tickets_Tickets_Priority_3"},
+{"field": "Queue", "operator": "Is Equal To", "value": "RappiPay_RappiPay_Non_Live_tickets_Tickets_Priority_4"},
+{"field": "Queue", "operator": "Is Equal To", "value": "RappiPay_RappiPay_Non_Live_tickets_Tickets_Priority_5"},
+{"field": "Queue", "operator": "Is Equal To", "value": "RappiPay | RRSS"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_RappiPay_RappiPay_Non_Live_tickets_Tickets_Peru"}

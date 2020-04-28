@@ -1,0 +1,5 @@
+{"field": "Queue", "operator": "Is Equal To", "value": "Socios - Chat Comercial Español"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SSL | Partners | AAA"},
+{"field": "Queue", "operator": "Is Equal To", "value": "Partners Operaciones ES"},
+{"field": "Queue", "operator": "Is Equal To", "value": "Partners Operaciones VIP ES"},
+{"field": "Queue", "operator": "Is Equal To", "value": "Socios - Pagos Chat Español"}

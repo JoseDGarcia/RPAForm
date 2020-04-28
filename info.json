@@ -1,0 +1,85 @@
+{
+    "data": [
+        {   
+            "title": "Tickets creados por Tipificación – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversacion",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Es igual a", "value": "Socios - Chat Comercial Español"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por Tipificación – Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversacion",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Es igual a", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Es igual a", "value": "Socios - Chat Comercial Español"}
+            ]
+        },
+        {   
+            "title": "Tickets creados por Tipificación y cola – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversacion",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"},
+                {"action": "Segment By", "action_property": "Queue Id"}
+
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Es igual a", "value": "Socios - Chat Comercial Español"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por Tipificación y cola – Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversacion",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"},
+                {"action": "Segment By", "action_property": "Queue Id"}
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Es igual a", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Es igual a", "value": "Socios - Chat Comercial Español"}
+            ]
+        },
+        {   
+            "title": "Tickets por Tipificación DM – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversacion",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+            ],
+            "all_filter": [
+                {"field": "Automatic Solution Type", "operator": "No es igual", "value": "Manual Review"},
+                {"field": "Automatic Solution Type", "operator": "No es igual", "value": "Not Automated"},
+                {"field": "Automatic Solution Type", "operator": "Est"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Es igual a", "value": "Socios - Chat Comercial Español"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_PPD_2_Nivel_Pagos_Priority_1"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_PPD_2_Nivel_Pagos_Priority_2"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_PPD_2_Nivel_Pagos_Priority_3"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_PPD_2_Nivel_Pagos_Priority_4"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_PPD_2_Nivel_Pagos_Priority_5"}

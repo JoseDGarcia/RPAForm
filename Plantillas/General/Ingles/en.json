@@ -1,0 +1,521 @@
+{
+    "data": [
+        {
+            "title": "Tickets creados - Fecha de creación",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "Tickets creados por estado",
+            "description": "",
+            "style": "Pie Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Status"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "Tickets creados por estado y sub estado– Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Status"},
+                {"action": "Segment By", "action_property": "Sub Status"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "Tickets creados por estado - Fecha de creación",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Status"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "Tickets cerrados - Fecha de cierre",
+            "description": "",
+            "style": "Line Chart",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [],
+            "all_filter": [{"field": "Status", "operator": "Is Equal To", "value": "Done"}],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "ASA - Fecha de creación",
+            "description": "",
+            "style": "Line Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [{"action": "Average", "action_property": "First Response Time"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "FRT - Fecha de creación",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [{"action": "Average", "action_property": "First Done Time"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "Tiempo de solución - Fecha de cierre",
+            "description": "",
+            "style": "Line Chart",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [{"action": "Average", "action_property": "Last Done Time"}],
+            "all_filter": [{"field": "Status", "operator": "Is Equal To", "value": "Done"}],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "Reopen - Fecha de creación",
+            "description": "",
+            "style": "Line Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [],
+            "all_filter": [{"field": "Reopen Count", "operator": "Is Greater Than or Equals", "value": "1"}],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {
+            "title": "CSAT - Fecha de creación de la satisfacción",
+            "description": "",
+            "style": "Line Chart",
+            "report_type": "Conversation",
+            "attributes": "Conversation Satisfaction Created",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Satisfaction Channel"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets creados por país - Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Country"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por país - Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Country"}],
+            "all_filter": [{"field": "Status", "operator": "Is Equal To", "value": "Done"}],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets creados por canal - Fecha de creación",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Channels"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por canal - Fecha de cierre",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Channels"}],
+            "all_filter": [{"field": "Status", "operator": "Is Equal To", "value": "Done"}],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets creados por tags - Fecha de creación",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Tags"}],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por tags - Fecha de cierre",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [{"action": "Segment By", "action_property": "Tags"}],
+            "all_filter": [{"field": "Status", "operator": "Is Equal To", "value": "Done"}],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+
+
+        {   
+            "title": "Tickets creados por cola - Fecha de creación",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets creados por cola y estado - Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"},
+                {"action": "Segment By", "action_property": "Status"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por cola - Fecha de cierre",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"}
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Is Equal To", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "ASA por cola - Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"},
+                {"action": "Average", "action_property": "First Response Time"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "FRT por cola - Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"},
+                {"action": "Average", "action_property": "First Done Time"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tiempo de solución por cola - Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"},
+                {"action": "Average", "action_property": "Last Done Time"}
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Is Equal To", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "CSAT por cola - Fecha de creación de la satisfacción",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Conversation Satisfaction Created",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"},
+                {"action": "Segment By", "action_property": "Satisfaction Channel"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Reopen por cola - Fecha de creación",
+            "description": "",
+            "style": "Stacked Column Chart",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"}
+            ],
+            "all_filter": [
+                {"field": "Reopen Count", "operator": "Is Greater Than or Equals", "value": "1"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+
+        {   
+            "title": "Tickets creados por agente y estado - Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Assigned Users"},
+                {"action": "Segment By", "action_property": "Status"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por agente - Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Assigned Users"}
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Is Equal To", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "FRT por agente - Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Assigned Users"},
+                {"action": "Average", "action_property": "First Done Time"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tiempo de solución por agente – Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Assigned Users"},
+                {"action": "Average", "action_property": "Last Done Time"}
+                 
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Is Equal To", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "CSAT por agente - Fecha de creación de la satisfacción",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Conversation Satisfaction Created",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Satisfaction Channel"},
+                {"action": "Segment By", "action_property": "Assigned Users"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Reopen por agente – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Assigned Users"}
+            ],
+            "all_filter": [
+                {"field": "Reopen Count", "operator": "Is Greater Than or Equals", "value": "1"},
+                {"field": "Status", "operator": "Is Equal To", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Snooze por agente – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Assigned Users"}
+                 
+            ],
+            "all_filter": [
+                {"field": "Snooze Count", "operator": "Is Equal To", "value": "1"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+
+
+        {   
+            "title": "Tickets creados por Tipificación – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por Tipificación – Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Is Equal To", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets creados por Tipificación y cola – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"},
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+
+            ],
+            "all_filter": [],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets cerrados por Tipificación y cola – Fecha de cierre",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Last Done Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Queue Id"},
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+            ],
+            "all_filter": [
+                {"field": "Status", "operator": "Is Equal To", "value": "Done"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        },
+        {   
+            "title": "Tickets por Tipificación DM – Fecha de creación",
+            "description": "",
+            "style": "Table",
+            "report_type": "Conversation",
+            "attributes": "Created At",
+            "attribute_calculation": [
+                {"action": "Segment By", "action_property": "Tipo y Categoria End User", "extra_option": "All"}
+            ],
+            "all_filter": [
+                {"field": "Automatic Solution Type", "operator": "Does Not Equal", "value": "Manual Review"},
+                {"field": "Automatic Solution Type", "operator": "Does Not Equal", "value": "Not Automated"},
+                {"field": "Automatic Solution Type", "operator": "Is Set"}
+            ],
+            "any_filter": [
+                {"field": "Queue", "operator": "Is Equal To", "value": "COLA"}
+            ]
+        }
+    ]
+}

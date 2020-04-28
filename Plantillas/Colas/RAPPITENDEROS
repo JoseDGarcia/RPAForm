@@ -1,0 +1,10 @@
+{"field": "Queue", "operator": "Is Equal To", "value": "SSL | RTs | Deudas"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS | Rts | Devoluciones"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS | Rts | Ganancias"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SSL | Rts | Incentivos y referidos"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SSL | Rts | Pagos segundo nivel"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS | Rts | Emergencias"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SSL | RTs | Global"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SSL | RTs | Global | RR SS"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SSL | Rts | Movimientos"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS | Rts | Onboarding"}

@@ -1,0 +1,10 @@
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Non_Live_Tickets_Priority_1"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Non_Live_Tickets_Priority_2"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Non_Live_Tickets_Priority_3"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Non_Live_Tickets_Priority_4"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Non_Live_Tickets_Priority_5"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Tiempo_Real_Chat_y/o_Whatsapp_Prime_Chat"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Tiempo_Real_Chat_y/o_Whatsapp_Chat"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Diamante_Non_Live_Tickets_Rappipay"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Rappisupport_Priority_2"},
+{"field": "Queue", "operator": "Is Equal To", "value": "SS_Customer_Rappisupport_Priority_1"}

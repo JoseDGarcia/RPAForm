@@ -1,0 +1,26 @@
+{
+    "add_button":[1176, 90],
+    "blank_template":[567, 438],
+    "styles":{
+        "Area Chart": [560, 380],
+        "Column Chart": [560, 496],
+        "Stacked Column Chart": [560, 626],
+        "Line Chart": [560, 743],
+        "Pie Chart": [560, 658],
+        "Table": [560, 773]
+    },
+    "offset_styles": ["Pie Chart", "Table"],
+    "next_button":[1454,871],
+    "aux": {
+        "first": {
+            "primary":[486, 580],
+            "secondary": [673, 580],
+            "extra_option": [715, 570]
+        },
+        "second": {
+            "primary":[486, 630],
+            "secondary": [673, 630],
+            "extra_option": [715, 630]
+        }
+    }
+}
