@@ -1,0 +1,121 @@
+{
+    "url": "https://rappi.kustomerapp.com/",
+    "login": {
+        "google_button": {
+            "name": "//*[@class='googleAuthButton']",
+            "option": "xpath"
+        }
+    },
+    "slidebar": {
+        "reporting": {
+            "name": "//i[contains(@class, 'chart-arc')]",
+            "option": "xpath"
+        }
+    },
+    "reporting": {
+        "new": {
+            "new_button": {
+                "name": "//*[@id='headerBar']//*[contains(text(),'New')]",
+                "option": "xpath"
+            },
+            "modal_input": {
+                "name": "//div[contains(@class, 'ReactModal__Content')]//input[contains(@placeholder,'Customer Report')]",
+                "option": "xpath"
+            },
+            "add_report_button": {
+                "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'Add Report')]",
+                "option": "xpath"
+            }
+        },
+        "add_chart": {
+            "add_chart_button": {
+                "name": "//*[@id='headerBar']//*[contains(text(),'Add chart')]",
+                "option": "xpath"
+            },
+            "add_chart_template": {
+                "name": "//div[contains(@class, 'ReactModal__Content')]//span[text()='Blank Template']",
+                "option": "xpath"
+            },
+            "add_chart_style": {
+                "name": "//div[contains(@class, 'ReactModal__Content')]//div[text()='[style]']",
+                "option": "xpath"
+            },
+            "second_step": {
+                "report_type": {
+                    "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'Select Data Object Type')]",
+                    "option": "xpath"
+                },
+                "date_attribute": {
+                    "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'Select Date Attribute')]",
+                    "option": "xpath"
+                },                
+                "segmentation": {
+                    "add_button": {
+                        "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'Add Action')]",
+                        "option": "xpath"
+                    },
+                    "action": {
+                        "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'Action')]",
+                        "option": "xpath"
+                    },
+                    "property": {
+                        "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'Property')]",
+                        "option": "xpath"
+                    },
+                    "aux": {
+                        "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'All')]",
+                        "option": "xpath" 
+                    }
+                },
+                "operators_button": {
+                    "name": "//div[contains(@class, 'ReactModal__Content')]//*[text()='Add']",
+                    "option": "xpath"
+                },
+                "operators_input": {
+                    "name": "//div[contains(@class, 'ReactModal__Content')]//*[contains(text(),'Field')]",
+                    "option": "xpath"
+                }
+            },
+            "third_step": {
+                "title_input": {
+                    "name": "//div[contains(@class, 'ReactModal__Content')]//form/div[1]/input",
+                    "option": "xpath"
+                }
+            },
+            "next_button": {
+                "name": "//div[contains(@class, 'ReactModal__Content')]//button[text()='Next']",
+                "option": "xpath"
+            },
+            "save_button": {
+                "name": "//div[contains(@class, 'ReactModal__Content')]//button[text()='Save']",
+                "option": "xpath"
+            }
+        },
+        "slidebar": {
+            "custom_reports":{
+                "name": "//*[@id='root']/div/div/div/div/main/div/div/nav/div/div[1]/div[3]/*",
+                "option": "xpath"
+            }
+        },
+        "misc": {
+            "misc_button": {
+                "name": "dots-vertical",
+                "option": "class_name"
+            },
+            "delete": {
+                "name": "popoverMenu__menu___1woig",
+                "option": "class_name"
+            }
+        },
+        "delete_chart": {
+            "modal": {
+                "name": "body > div.ReactModalPortal > div > div", 
+                "option": "css_selector"
+            },
+            "button": {
+                "name": "body > div.ReactModalPortal > div > div > div > div.modalSkeleton__footer___2alp9 > div > div.modalFooter__right___3w-mQ > div > span:nth-child(2) > button", 
+                "option": "css_selector"
+            }
+        }
+    }
+}

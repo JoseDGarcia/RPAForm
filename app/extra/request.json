@@ -1,0 +1,17 @@
+{
+    "name": "SS_Prueba_RPA",
+    "queues": [
+        "SS_Customer_PPD_PPD_General_Priority_1",
+        "SS_Customer_PPD_PPD_General_Priority_2",
+        "SS_Customer_PPD_PPD_General_Priority_3",
+        "SS_Customer_PPD_PPD_General_Priority_4",
+        "SS_Customer_PPD_PPD_General_Priority_5",
+        "SS_Customer_PPD_Apoyo_General_Priority_1",
+        "SS_Customer_PPD_Apoyo_General_Priority_2",
+        "SS_Customer_PPD_Apoyo_General_Priority_3",
+        "SS_Customer_PPD_Apoyo_General_Priority_4",
+        "SS_Customer_PPD_Apoyo_General_Priority_5"
+    ],
+    "is_rt": false,
+    "language": "EN"
+}
